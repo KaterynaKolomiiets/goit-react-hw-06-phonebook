@@ -13,7 +13,7 @@ const ContactList = () => {
 
   let contacts = items.filter((item) => item.name.toLowerCase().includes(filter.toLowerCase()));
   
-  return <ul className={s.ul}>{items.map((item) => (
+  return <ul className={s.ul}>{contacts.map((item) => (
     <ContactListItem
       key={v4()}
       props={item}
